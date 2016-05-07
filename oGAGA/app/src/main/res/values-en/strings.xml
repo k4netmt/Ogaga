@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Ogaga</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_timeline">TimelineActivity</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="user_register">Singup</string>
+    <string name="imageDescription">Choose Image</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_name">Tên tài khoản</string>
+    <string name="full_name">Full Name</string>
+    <string name="phonenumber">Phone Number</string>
+    <string name="address_user">Address</string>
+    <string name="upload_image">Chọn hình ảnh</string>
+    <string name="title_activity_time_line">TimeLineActivity</string>
+    <string name="password">Password</string>
+    <string name="registry_user">Create</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="registry_success">Đăng ký thành công</string>
+    <string name="login_fails">Tài khoản không tồn tại</string>
+    <string name="login_success">Đăng nhập thành công</string>
+    <string name="count_success_transaction">Successful Transaction: 10</string>
+    <!-- TODO: Product label -->
+    <string name="product_name">Product Name</string>
+    <string name="product_price">Product Price</string>
+    <string name="product_quanlity">Đơn vị</string>
+    <string name="product_status">Trạng thái</string>
+    <string name="product_min_salequanlity">Số lượng thấp nhất</string>
+    <string name="product_startat">Ngày bắt đầu</string>
+    <string name="product_bestfor">Thời hạn sử dụng</string>
+    <string name="product_finished_date">Ngày kết thúc</string>
+    <string name="product_type">Loại sản phẩm</string>
+    <string name="create">Create</string>
+    <string name="product_description">Mô tả</string>
+    <string-array name="product_type">
+        <item>Cá</item>
+        <item>Trái cây</item>
+        <item>Rau</item>
+        <item>Thực phẩm tại gia</item>
+    </string-array>
+    <string-array name="product_status_new">
+        <item>Bắt đầu làm</item>
+        <item>Đang phát triển</item>
+        <item>Bán ngay</item>
+    </string-array>
+    <string-array name="product_status_edit">
+        <item>Bắt đầu làm</item>
+        <item>Đang phát triển</item>
+        <item>Bán ngay</item>
+        <item>Hết hàng</item>
+    </string-array>
+    <string-array name="product_unit">
+        <item>Kg</item>
+        <item>Lít</item>
+    </string-array>
+</resources>

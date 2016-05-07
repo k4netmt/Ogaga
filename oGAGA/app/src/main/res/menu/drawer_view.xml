@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navSetting"
+            android:title="Setting"
+            android:icon="@android:drawable/ic_menu_preferences"/>
+        <item
+            android:id="@+id/navUserProfile"
+            android:title="User Profile"
+            android:icon="@drawable/user"/>
+        <item
+            android:id="@+id/navSignOut"
+            android:title="Sign Out"
+            android:icon="@drawable/ic_logout"/>
+    </group>
+</menu>

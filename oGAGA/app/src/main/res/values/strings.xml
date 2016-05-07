@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Ogaga</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_timeline">TimelineActivity</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_name">Tên tài khoản</string>
+    <string name="full_name">Họ và tên</string>
+    <string name="phonenumber">Số điện thoại</string>
+    <string name="address_user">Địa chỉ</string>
+    <string name="upload_image">Chọn hình ảnh</string>
+    <string name="title_activity_time_line">TimeLineActivity</string>
+    <string name="password">Mật khẩu</string>
+    <string name="registry_user">Tạo tài khoản</string>
+    <string name="confirm_password">Xác nhận mậu khẩu</string>
+    <string name="registry_success">Đăng ký thành công</string>
+    <string name="login_fails">Tài khoản không tồn tại</string>
+    <string name="login_success">Đăng nhập thành công</string>
+    <string name="count_success_transaction">Successful Transaction: 10</string>
+    <!-- TODO: Product label -->
+    <string name="product_name">Tên sản phẩm</string>
+    <string name="product_price">Giá trên đơn vị</string>
+    <string name="product_quanlity">Đơn vị</string>
+    <string name="product_status">Trạng thái</string>
+    <string name="product_min_salequanlity">Số lượng thấp nhất</string>
+    <string name="product_startat">Ngày bắt đầu</string>
+    <string name="product_bestfor">Thời hạn sử dụng</string>
+    <string name="product_finished_date">Ngày kết thúc</string>
+    <string name="product_type">Loại sản phẩm</string>
+    <string name="product_description">Mô tả</string>
+    <string name="item_product_name">Product name</string>
+    <string name="item_producer">Producer Name</string>
+    <string name="item_product_origin">Product origin</string>
+    <string name="item_product_price">Product price</string>
+    <string name="product_created_successful">Tạo sản phẩm thành công</string>
+    <string name="product_created_fail">Tạo sản phẩm thất bại</string>
+    <string-array name="product_type">
+        <item>Cá</item>
+        <item>Trái cây</item>
+        <item>Rau</item>
+        <item>Thực phẩm tại gia</item>
+    </string-array>
+    <string-array name="product_status_new">
+        <item>Bắt đầu làm</item>
+        <item>Đang phát triển</item>
+        <item>Bán ngay</item>
+    </string-array>
+    <string-array name="product_status_edit">
+        <item>Bắt đầu làm</item>
+        <item>Đang phát triển</item>
+        <item>Bán ngay</item>
+        <item>Hết hàng</item>
+    </string-array>
+    <string-array name="product_unit">
+        <item>Kg</item>
+        <item>Lít</item>
+    </string-array>
+    <!-- TODO: Order label -->
+    <string name="order_cancel">Hủy</string>
+    <string name="order_accept">Nhận</string>
+    <string name="order_notaccept">Không nhận</string>
+    <string name="order_product">Đặt hàng</string>
+    <string name="order_count">Số lượng</string>
+    <string name="order_totals">Thành tiền:</string>
+    <string name="order_successful">Đặt hàng thành công</string>
+    <string name="address_current">Địa chỉ hiện tại</string>
+    <string name="address_others">Địa chỉ khác</string>
+    <string name="phone_current">Số điện thoại hiện tại</string>
+    <string name="phone_others">Số điện thoại khác</string>
+    <string name="order_description">Ghi chú</string>
+    <string name="order_titles_push"> đặt hàng</string>
+    <string name="order_gostore_push">Đi đến kho hàng</string>
+    <string name="order_date">Ngày đặt</string>
+    <string name="order_list">Danh sách đặt hàng</string>
+    <!-- TODO: Shipping label -->
+    <string name="shipping_type_cod">Thanh toán khi nhận hàng</string>
+    <!-- TODO: Status label -->
+    <string name="next_status">ngày nữa sẽ </string>
+    <string name="status_sold">Đang bán</string>
+    <!-- TODO: Errors label -->
+    <string name="error_address_empty">Vui lòng điền địa chỉ</string>
+    <string name="error_productname_empty">Vui lòng điền tên sản phẩm</string>
+    <string name="error_productprice_empty">Vui lòng điền giá sản phẩm</string>
+    <string name="error_image_empty">Vui lòng chọn ảnh</string>
+    <string name="error_date_empty">Vui lòng chọn ngày tháng</string>
+    <string name="error_datestart_than">Ngày bắt đầu không hợp lệ</string>
+    <string name="error_phonenumber_empty">Vui lòng điền số điện thoại</string>
+    <string name="error_countProduct_empty">Nhập số lượng</string>
+    <string name="error_description_limited">Mô tả vượt quá giới hạn</string>
+    <string name="error_description_empty">Vui lòng điền mô tả vượt</string>
+    <string name="error_password_empty">Vui lòng điền mật khẩu</string>
+    <string name="error_account_notexists">Tài khoản không tồn tại</string>
+    <!-- TODO: Extra label -->
+    <string name="not_connected">Không có kết nối mạng</string>
+    <!-- TODO: Pushnotification label -->
+    <string name="push_ordered">Không có kết nối mạng</string>
+    <string name="comming_soon">Đang phát triển</string>
+</resources>

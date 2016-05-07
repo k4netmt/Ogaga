@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".acitivies.UserRegistryActivity">
+
+    <!-- The ActionBar displayed at the top-->
+    <include
+        layout="@layout/setting_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--<TableLayout
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:stretchColumns="2"
+         android:layout_marginTop="@dimen/activity_horizontal_margin"
+         >
+
+         <TableRow
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+             <ImageView
+                 style="@style/ivAvatar"
+                 android:layout_column="1"
+                 android:id="@+id/ivAvatar"/>
+             <Button
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="@string/upload_image"
+                 android:id="@+id/btnChoseAvatar"
+                 android:layout_column="2" />
+         </TableRow>
+         <TableRow>
+             <TextView
+                 android:text="@string/phonenumber"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_column="1" />
+             <EditText
+                 android:width="200px"
+                 android:inputType="phone"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/etPhoneNumber"/>
+         </TableRow>
+         <TableRow>
+             <TextView
+                 android:text="@string/password"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_column="1" />
+             <EditText
+                 android:inputType="textPassword"
+                 android:width="200px"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/etPassword"/>
+         </TableRow>
+         <TableRow>
+             <TextView
+                 android:text="@string/confirm_password"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_column="1" />
+             <EditText
+                 android:inputType="textPassword"
+                 android:width="200px"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/etConfirmPassword"/>
+         </TableRow>
+         <TableRow>
+             <TextView
+                 android:text="@string/full_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_column="1" />
+             <EditText
+                 android:width="200px"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/etFullname"/>
+         </TableRow>
+
+         <TableRow>
+             <TextView
+                 android:text="@string/address_user"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_column="1" />
+             <EditText
+                 android:width="200px"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/etAdressUser"
+                 android:minLines="2"
+                 android:maxLines="3"
+                 android:gravity="top"/>
+         </TableRow>
+         <TableRow
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             >
+
+             <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Submit"
+                 android:id="@+id/btnRegistry"
+                 android:layout_column="2"/>
+         </TableRow>
+     </TableLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/margin_image"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                style="@style/ivAvatar"
+                android:layout_gravity="left"
+                android:contentDescription="@string/imageDescription"
+                android:padding="5dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/btnChooseImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_toEndOf="@+id/ivAvatar"
+                android:layout_toRightOf="@+id/ivAvatar"
+                android:src="@drawable/camera" />
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            style="@style/input"
+            android:hint="@string/phonenumber"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/input"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            style="@style/input"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/etFullname"
+            style="@style/input"
+            android:hint="@string/full_name" />
+
+        <EditText
+            android:id="@+id/etAdressUser"
+            style="@style/input"
+            android:hint="@string/address_user"
+            android:maxLines="3"
+            android:minLines="1" />
+
+
+        <Button
+            android:id="@+id/btnRegistry"
+            style="@style/submit"
+            android:layout_marginTop="20dp"
+            android:text="@string/registry_user" />
+
+    </LinearLayout>
+
+</LinearLayout>

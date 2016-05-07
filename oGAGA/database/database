@@ -1,0 +1,88 @@
+User:
+
+Id
+FullName
+Description
+UserName
+ProfileImage
+Address User
+Location
+Follower Count
+Phone Number
+Success Transaction (So giao dich thanh cong) ***
+Created At
+
+/***************************************************************************************************************************/
+Product
+
+Id
+Name
+Description Id (FK)
+User(FK User)**
+Price 
+Quantity Unit
+Status Product: Begining, Proccessing, Onsale, Sold out (if status Sold out: don't display to search list)
+Shipping Option (FK) (optional)
+Min Sale Quantity (optional): at least quantity which user have to order with.
+Start At (datetime)
+Best for: (ex: 3 months) experiod for the best
+Finished Date (datetime): Base on to define Status Product
+Product type (FK)
+
+/***************************************************************************************************************************/
+
+Product Type 
+
+Id
+Name
+Description 
+Url Image
+Created at
+
+/***************************************************************************************************************************/
+/*Follow count for every product*/
+
+Product-User
+
+User Id (FK)
+Product Id (FK)
+Type (Saler or Buyer)
+
+
+/***************************************************************************************************************************/
+Description
+
+Id
+Content
+Type: (Paragrah, record....)
+
+
+/***************************************************************************************************************************/
+
+Media
+
+Product Id (FK)
+Url
+Type Media: Video, Photo, Gif
+Size Media (FK) 
+Created At
+
+/***************************************************************************************************************************/
+
+Size Media
+
+Type Name:  Thumb (150*150)
+		    Large (1024*512)
+			Medium (600*300)
+			Small (340*170)
+
+			
+/***************************************************************************************************************************/
+
+Shipping (optional)
+
+User
+Product
+Shipping Type: Thrid party
+
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="PICK_PHOTO_CODE">1046</integer>
+    <integer name="REGISTRY_SUCCESS_CODE">1011</integer>
+    <integer name="LOGIN_SUCCESS_CODE">1012</integer>
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ogaga.flash.acitivies.UserProfileActivity">
+
+    <!-- The ActionBar displayed at the top-->
+    <include
+        layout="@layout/setting_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_header"
+        android:id="@+id/LProfile">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_action_user"/>
+        <TextView
+            style="@style/FullNameUser"
+            android:id="@+id/tvFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivAvatar"
+            android:paddingLeft="5dp"
+            android:text="@string/full_name" />
+        <RelativeLayout
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFullName"
+            android:layout_toRightOf="@+id/ivAvatar"
+            android:id="@+id/rlPhonenumber">
+            <ImageView
+                android:id="@+id/ivPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_phone"/>
+            <TextView
+                android:paddingTop="5dp"
+                android:id="@+id/tvPhonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivPhone"
+                android:text="@string/phonenumber" />
+        </RelativeLayout>
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:id="@+id/llGroupCash"
+            android:layout_below="@+id/rlPhonenumber"
+            android:layout_toRightOf="@+id/ivAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/handshake"
+                    android:id="@+id/ivHandShake"/>
+                <TextView
+                    android:paddingTop="5dp"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/ivHandShake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvCountTrans"
+                    android:text="100.000.000" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_eye_open"
+                    android:id="@+id/ivFollow"/>
+                <TextView
+                    android:layout_toRightOf="@+id/ivFollow"
+                    android:paddingTop="5dp"
+                    android:gravity="center"
+                    android:id="@+id/tvCountFollow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100.000.000" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llGroupCash"
+            android:layout_toRightOf="@+id/ivAvatar">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivLocation"
+                android:src="@drawable/ic_action_location"/>
+            <TextView
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:id="@+id/tvAddresuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivLocation"
+                android:text="@string/address_user" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.astuetz.PagerSlidingTabStrip
+        android:paddingTop="10dp"
+        android:id="@+id/tabs"
+        app:pstsIndicatorColor="@color/md_red_400"
+        app:pstsUnderlineColor="@color/md_red_400"
+        app:pstsDividerColor="@color/md_red_400"
+        android:textColor="@color/md_red_400"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/LProfile"
+        app:pstsShouldExpand="true"
+        app:pstsTextAllCaps="true" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabs"
+        android:background="@android:color/white" />
+
+</RelativeLayout>
